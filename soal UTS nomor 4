@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,angka,i,mod;
+    int total_genap=0;
+    int total_ganjil=0;
+    int total=0;
+    cout<< "masukan banyak angka : ";
+    cin>> n;
+    for (i=1,;i<=n;i++)
+        cout<<"masukan angka"<<i<<" : ";
+        cin>>angka;
+        total=total+angka;
+
+        mod=angka%2;
+        if(mod==0){
+            total_genap=total_genap+genap;
+        }else(total_ganjil=total_ganjil+angka;)
+        }
+
+    cout<<endl;
+    cout<<"total bilangan        : "<<total<<endl;
+    cout<<"total bilangan ganjil : "<<total_ganjil<<endl;
+    cout<<"total bilangan genap  : "<<total_genap<<endl;
+return 0;
+}
