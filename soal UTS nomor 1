@@ -1,0 +1,39 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+  int panjang,lebar;
+  float t_luas,t_keliling;
+  float luas_persegi,luas_segitiga;
+  float k_persegi,k_segitiga,tinggi_segitiga;
+
+  cout<<"masukan panjang :";
+  cin>>panjang;
+  cout<<"masukan luas :";
+  cin>>lebar;
+  cout<<endl<<endl;
+  cout<<"hasil"<<endl<<endl;
+
+  tinggi_segitiga=(lebar*lebar)-(lebar/2)*(lebar/2);
+  tinggi_segitiga=sqrt(tinggi_segitiga);
+
+  luas_persegi=panjang*lebar;
+  luas_segitiga=(lebar*tinggi_segitiga)/2;
+  t_luas=luas_persegi+luas_segitiga;
+
+  k_persegi=(2*panjang)+(2*lebar);
+  k_segitiga=(lebar*3);
+  t_keliling=k_persegi+k_segitiga;
+
+  cout<<"luas persegi         : "<<luas_persegi<<endl;
+  cout<<"luas segitiga        : "<<luas_segitiga<<endl;
+  cout<<"total luas           : "<<t_luas<<endl;
+  cout<<"------------------------------"<<endl;
+  cout<<"keliling persegi     : "<<k_persegi<<endl;
+  cout<<"keliling segitiga    : "<<k_segitiga<<endl;
+  cout<<"total keliling       : "<<t_keliling<<endl;
+
+  return;0
+}
