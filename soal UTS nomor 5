@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main()
+{
+    int anggota,pilihan;
+    int i,terbesar;
+    int suara1,suara2,suara3;
+    string pemenang;
+
+    cout<<"nama kandidat"<<endl;
+    cout<<"1. MODIQ(Mocthar-sidiq)"<<endl;
+    cout<<"2. WIDI(Wido-Dini)"<<endl;
+    cout<<"3. YETI(Yeni-Yusti)"<<endl;
+    cout<<"banyak anggota : ";
+    cin>>anggota;
+    cout>>endl;
+
+    suara1=0;
+    suara2=0;
+    suara3=0;
+    for(i=1;i<=anggota;1++){
+        cout<<"pemilih ke-"<<i<<"Vote nomor kandidat : ";
+        cin>>pilihan;
+        switch(pilihan){
+        case 1:suara1++;break;
+        case 2:suara2++;break;
+        case 3:suara3++;break;
+        }
+    }
+    if(suara1>suara2){
+        terbesar =suara1;
+        pemenang="MODIQ (Mocthar-Sidiq) ";}
+    else
+    {terbesar = suara2;
+     pemenang="WIDI(Wido-Dini)";
+    }
+    if(suara3>terbesar){
+       terbesar = suara3;
+        pemenang="YETI (Yeni-Yusti";
+     }
+    cout<<endl;
+    cout<<"MODIQ" (Mocthar-Sidiq)="<<suara1<<"orang"<<endl;
+    cout<<"WIDI"  (Wido-Dini)    ="<<suara2<<"orang"<<endl;
+    cout<<"YETI"  (Yeni-Yusti)   ="<<suara3<<"orang"<<endl;
+
+        cout<<endl<<"pemenangnya :"<<pemenang<<endl;
+
+    return 0;
+}
